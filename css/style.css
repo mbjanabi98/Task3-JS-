@@ -354,7 +354,10 @@ header {
     cursor: pointer;
 }
 
-
+.menuIvone img{
+    display: none;
+    width: 20px;
+}
 
 .introduction {
     display: inline-block;

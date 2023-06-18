@@ -143,6 +143,9 @@ $('#news1').slick({
 // });
 
 
+$('.menuIvone img').click(function () {
+    $(".down_header .menu ul").toggleClass('active');
+});
 
 
 
