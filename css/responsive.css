@@ -1,0 +1,636 @@
+ /**************max-width: 1200px**********/
+
+ @media only screen and (max-width: 1200px) {
+
+     /**************header**********/
+     header {
+         display: none !important;
+     }
+
+
+
+     /**************header**********/
+
+     /**************Our Process**********/
+
+
+     .our_process .taitel h1 {
+         top: 14px;
+         font-size: 120px;
+     }
+
+     .our_process .taitel h3 {
+
+         top: 73px;
+
+     }
+
+     .our_process .taitel h4 {
+         top: 40px;
+     }
+
+     .our_process .process {
+         margin-top: -77px;
+     }
+
+
+     .our_process .process ul {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .our_process .process li {
+         position: relative;
+         width: 70%;
+         /* margin: 14px; */
+         margin-left: 84px;
+     }
+
+
+
+
+
+     .our_process .process li:nth-child(1):after,
+     .our_process .process li:nth-child(2):after,
+     .our_process .process li:nth-child(3):after {
+         content: "";
+         display: none;
+     }
+
+     /**************Our Process**********/
+
+
+     /**************about_us**********/
+
+     .about_us .about_us_conant .about_text h1 {
+
+         font-size: 111px;
+
+         position: relative;
+     }
+
+     .about_us .about_us_conant .about_text h5 {
+         font-size: 22px;
+         position: absolute;
+         top: 43px;
+         left: 435px;
+     }
+
+     .about_us .about_us_conant .about_text h3 {
+         font-size: 21px;
+         position: absolute;
+         width: 28%;
+         top: 123px;
+         left: 200px;
+     }
+
+     .about_us .about_us_conant .about_text p {
+         font-size: 15px;
+         width: 94%;
+         text-align: right;
+         margin: 0;
+         padding-left: 40px;
+         margin-bottom: 18px;
+     }
+
+     .about_us .about_us_conant .about_text a {
+         margin-right: 30px;
+     }
+
+     .about_us .about_us_conant .about_us_img {
+
+         margin-right: 16px;
+     }
+
+
+     /**************about_us**********/
+
+     /**************our_services**********/
+
+     .main_services .titel h1 {
+         top: 14px;
+         font-size: 107px;
+     }
+
+     .main_services .titel h6 {
+
+         top: 0;
+     }
+
+     .main_services .titel h2 {
+         top: -40px;
+     }
+
+
+     .main_services .our_services ul {
+         display: flex;
+         flex-direction: row-reverse;
+         justify-content: space-around;
+         list-style: none;
+         flex-wrap: wrap;
+         padding: 0;
+     }
+
+
+     .main_services .our_services ul li .contact {
+         position: absolute;
+         top: 101px;
+         right: 2rem;
+         width: 44%;
+         text-align: right;
+         color: #fff;
+         z-index: 1;
+     }
+
+
+
+     /**************our_services**********/
+
+
+
+     /**************News**********/
+
+     .news .titel h1 {
+         top: 14px;
+         font-size: 107px;
+         right: 459px;
+     }
+
+     .news .titel h6 {
+
+         top: 0;
+     }
+
+     .news .titel h2 {
+         top: -40px;
+     }
+
+     .news .news1 {
+         margin-top: 116px;
+     }
+
+     .news .news1 {
+         margin-top: 116px;
+     }
+
+     .news .news1 .slick-prev {
+         left: 24rem;
+         /* color: #fff; */
+         top: -35px;
+     }
+
+     .news .news1 .slick-next {
+         right: 24rem;
+         /* color: #fff; */
+         top: -35px;
+     }
+
+     /**************News**********/
+
+ }
+
+
+ /**************max-width: 992px**********/
+
+
+ @media only screen and (max-width: 992px) {
+     /**************about_us**********/
+
+     .about_us .about_us_conant .about_text h1 {
+
+         font-size: 80px;
+         position: relative;
+     }
+
+     .about_us .about_us_conant .about_text h5 {
+         font-size: 19px;
+         position: absolute;
+         top: 0px;
+         left: 327px;
+
+         text-align: right;
+     }
+
+
+
+     .about_us .about_us_conant .about_text h3 {
+         font-size: 20px;
+         position: absolute;
+         width: 38%;
+         top: 71px;
+         left: 81px;
+     }
+
+     .about_us .about_us_conant .about_text p {
+         font-size: 15px;
+         width: 98%;
+         text-align: right;
+         margin: 0;
+         padding-left: 45px;
+         margin-bottom: 18px
+     }
+
+     .about_us .about_us_conant .about_text a {
+         margin-right: 6px;
+     }
+
+     .about_us .about_us_conant .about_us_img {
+
+         margin-right: 16px;
+     }
+
+
+     /**************about_us**********/
+
+     .main_services .titel h1 {
+         top: 25px;
+         font-size: 75px;
+     }
+
+     .news .titel h1 {
+         top: 25px;
+         font-size: 75px;
+     }
+
+     .news .news1 {
+         margin-top: 116px;
+     }
+
+     .news .news1 .slick-prev {
+        left: 16rem;
+        /* color: #fff; */
+        top: -35px;
+    
+         /* color: #fff; */
+         top: -35px;
+     }
+
+     .news .news1 .slick-next {
+         right: 16rem;
+         /* color: #fff; */
+         top: -35px;
+     }
+
+
+
+
+
+
+     /**************footer**********/
+
+
+     .footer .footer12 .therd_footer input#submit {
+         position: absolute;
+         /* height: 39px; */
+         border-radius: 8px;
+         border: none;
+         text-align: right;
+         background: url(../images/mess.png)no-repeat;
+         font-size: 0;
+         width: 50px;
+         left: 33rem;
+         padding: 22px;
+         margin-top: 5px;
+
+     }
+
+     /**************footer**********/
+
+
+
+ }
+
+
+
+
+
+
+
+
+ /**************max-width: 768px**********/
+
+
+ @media only screen and (max-width: 768px) {
+
+     .news .news1 {
+         margin-top: 116px;
+     }
+
+     .news .news1 .slick-prev {
+         left: 18rem;
+         /* color: #fff; */
+         top: -35px;
+     }
+
+     .news .news1 .slick-next {
+         right: 18rem;
+         /* color: #fff; */
+         top: -35px;
+     }
+
+     .news .titel h1 {
+         top: -36px;
+         font-size: 97px;
+         right: 258px;
+     }
+
+     
+
+     .news .titel h6 {
+
+         top: 0;
+     }
+
+     .news .titel h2 {
+         top: -40px;
+     }
+
+    
+     .footer .footer12 .therd_footer input#submit {
+      
+      
+         left: 24rem;
+         
+     }
+
+
+     .why_us .res_for_why .prosece2 {
+        width: 48%;
+        text-align: center;
+    }
+
+
+    .why_us .res_for_why {
+        display: grid;
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: wrap; */
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-between;
+        justify-items: center;
+    }
+
+     .why_us .prosece2 p {
+        width: 100%;
+        display: inline-block;
+        font-size: 14px;
+        margin: 25px 0px 175px;
+    }
+
+
+ }
+
+
+ /**************max-width: 576px**********/
+
+
+ @media only screen and (max-width: 576px) {
+     .news .news1 {
+         margin-top: 116px;
+     }
+
+     .news .news1 .slick-prev {
+         left: 24rem;
+         /* color: #fff; */
+         top: -35px;
+     }
+
+     .news .news1 .slick-next {
+         right: 24rem;
+         /* color: #fff; */
+         top: -35px;
+     }
+
+
+     .why_us .res_for_why .prosece2 {
+        width: 48%;
+        text-align: center;
+    }
+
+
+    .why_us .res_for_why {
+        display: grid;
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: wrap; */
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-between;
+        justify-items: center;
+    }
+
+     .why_us .prosece2 p {
+        width: 100%;
+        display: inline-block;
+        font-size: 14px;
+        margin: 25px 0px 175px;
+    }
+ }
+
+
+
+ /**************max-width: 567px**********/
+
+
+
+ @media only screen and (max-width: 567px) {
+     .news .news1 {
+         margin-top: 116px;
+     }
+
+     .news .news1 .slick-prev {
+         left: 6rem;
+         /* color: #fff; */
+         top: -35px;
+     }
+
+     .news .news1 .slick-next {
+         right: 6rem;
+         /* color: #fff; */
+         top: -35px;
+     }
+
+
+     .why_us .res_for_why .prosece2 {
+        width: 48%;
+        text-align: center;
+    }
+
+
+    .why_us .res_for_why {
+        display: grid;
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: wrap; */
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-between;
+        justify-items: center;
+    }
+
+     .why_us .prosece2 p {
+        width: 100%;
+        display: inline-block;
+        font-size: 14px;
+        margin: 25px 0px 175px;
+    }
+
+    .footer .footer12 .therd_footer input#submit {
+        left: 5rem;
+    }
+
+    .our_process .taitel h1 {
+        top: 3px;
+        font-size: 81px;
+    }
+
+    .our_process .process ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .our_process .process li {
+        position: relative;
+        width: 70%;
+        /* margin: 14px; */
+        margin-left: 64px;
+        /* margin-top: -87px; */
+        top: -79px;
+    }
+
+
+
+    .about_us .about_us_conant .about_text {
+        /* margin-right: 44px; */
+        text-align: right;
+        width: 100%;
+    }
+
+    .about_us .about_us_conant .about_text h5 {
+        font-size: 19px;
+        position: absolute;
+        top: 0px;
+        left: 283px;
+        text-align: right;
+    }
+
+    .about_us .about_us_conant .about_text h3 {
+        font-size: 20px;
+        position: absolute;
+        width: 71%;
+        top: 71px;
+        left: 81px;
+    }
+
+    .about_us .about_us_conant .about_text p {
+        font-size: 15px;
+        width: 93%;
+        text-align: right;
+        margin: 0;
+        padding-left: 35px;
+        margin-bottom: 18px;
+    }
+
+    .about_us .about_us_conant .about_text a {
+        margin-right: 21px;
+    }
+
+    .about_us .about_us_conant .about_us_img {
+        margin: 29px 17px 0px;
+        width: 100%;
+    }
+
+    .main_services .titel h2 {
+        font-size: 27px;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        /* top: 84px; */
+    }
+
+    .main_services .our_services .pic img {
+        width: 100%;
+
+    }
+
+    .our_services ul li::before {
+        content: "";
+        opacity: 0.729;
+        width: 325px;
+        height: 254px;
+        border-radius: 5px;
+        background-color: #20145f;
+        z-index: 1;
+        display: inline-block;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .main_services .our_services ul li .contact {
+        position: absolute;
+        top: 39px;
+        right: 2rem;
+        width: 47%;
+        text-align: right;
+        color: #fff;
+        z-index: 1;
+    }
+
+    .footer .footer12 {
+        display: grid;
+        /* flex-direction: row-reverse; */
+        /* justify-content: space-between; */
+        /* flex-wrap: wrap; */
+        /* text-align: right; */
+        align-content: space-between;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+
+    .footer .footer12 .logo_and_into {
+        width: 60%;
+        text-align: right;
+    }
+
+    .footer h1 {
+        font-size: 19px;
+        position: relative;
+    }
+
+    .footer h1::after {
+        content: "";
+        opacity: 0.729;
+        width: 60px;
+        height: 2px;
+        /* border-radius: 5px; */
+        background-color: #fff;
+        z-index: 1;
+        display: inline-block;
+        position: absolute;
+        /* margin-top: 10px; */
+        margin-left: -61px;
+        top: 38px;
+    }
+
+    
+    .footer.main_footer {
+        text-align: right;
+        margin-right: -41px;
+    }
+
+
+    .footer .second_footer {
+        text-align: right;
+        /* margin-right: -1px; */
+    }
+
+    .footer.therd_footer {
+        text-align: right;
+    }
+
+    .footer .footer12 .therd_footer input#submit {
+        left: 1rem;
+    }
+    
+    
+ }

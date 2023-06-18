@@ -80,7 +80,7 @@ $(document).ready(function () {
         var src = iframe.attr('src');
         src += "&autoplay=1";
         iframe.attr('src', src);
-      });
+    });
 
 
 
@@ -90,25 +90,57 @@ $(document).ready(function () {
         var src = iframe.attr('src');
         src = src.replace('&autoplay=1', '&autoplay=0');
         iframe.attr('src', src);
-       
+
     });
 
-    
 
-    
+
+
 
 
 });
 
 
- 
+
 $('#news1').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     dots: true,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+            }
+        },
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
 });
+
+// $(window).on('resize', function () {
+//     var windowWidth = $(window).width();
+
+//     // Adjust the slider settings based on window width
+//     if (windowWidth < 500) {
+//         $('#news1').slick('slickSetOption', 'slidesToShow', 1, true);
+//     } else if (windowWidth < 768) {
+//         $('#news1').slick('slickSetOption', 'slidesToShow', 1, true);
+//     } else if (windowWidth > 768 && windowWidth < 1200) {
+//         $('#news1').slick('slickSetOption', 'slidesToShow', 3, true);
+//     } else {
+//         $('#news1').slick('slickSetOption', 'slidesToShow', 3, true);
+//     }
+// });
 
 
 
