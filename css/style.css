@@ -25,7 +25,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    
+
 }
 
 ul {
@@ -40,14 +40,14 @@ body {
     font-family: "cairo", cairo;
     margin: 0;
     /* direction:rtl; */
-    overflow-x: hidden  ;
+    overflow-x: hidden;
 }
 
 
 /* ------------------------------------------------------------------------------------------------- */
 .afterScroolColor {
     background-color: #eef0f2 !important;
-   
+
 }
 
 .afterScroolposition {
@@ -65,8 +65,8 @@ body {
     max-width: 1200px;
     position: relative;
     width: 100%;
-   
-   
+
+
 }
 
 /* @media (min-width : 768) {
@@ -87,8 +87,9 @@ body {
     .container {
         max-width: 1170px;
     }
-} */
+}
 
+*/
 /* End Global Rules */
 
 
@@ -141,7 +142,7 @@ body {
 }
 
 .social_media ul li span {
-    padding: 0px 115px 0px 22px;
+    padding: 0px 50px 0px 22px;
 }
 
 
@@ -152,7 +153,7 @@ body {
 
 
 .social_media ul li:hover a {
-    width: 19rem;
+    width: 11rem;
 
 }
 
@@ -356,18 +357,21 @@ header {
 
 
 .introduction {
-    width: 100%;
     display: inline-block;
-    /* max-height: 584px;
-    height: 500px; */
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    top: -95px;
 }
 
 .introduction iframe {
-    width: 100%;
-    position: relative;
-    top: -95px;
     border: none;
     display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* -------------------------------slider--------------------------------- */
@@ -509,15 +513,17 @@ header {
 }
 
 .our_process .process .order .text_process::before {
+    opacity: 0.4;
     content: "";
-    background-color: #6798d266;
+    background-color: #6798d2c7;
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     border-radius: 18px;
     display: none;
+    opacity: 0.3;
 }
 
 .our_process .process li:hover .order .text_process::before {
@@ -558,14 +564,23 @@ header {
 .about_us .about_us_conant {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.about_us .text {
+    width: 50%;
+}
+
+.about_us .img101 {
+    width: 50%;
+    margin-right: 30px;
 }
 
 .about_us .about_us_conant .about_text {
     /* margin-right: 44px; */
     text-align: right;
-    width: 49%;
+    width: 90%;
 }
 
 .about_us .about_us_conant .about_text h1 {
@@ -591,13 +606,14 @@ header {
     font-size: 27px;
     position: relative;
     display: inline-block;
-    width: 55%;
+    width: 100%;
     margin: 0;
     /* top: 84px; */
 }
 
 .about_us .about_us_conant .about_text p {
     font-size: 15px;
+    padding-left: 30px;
 }
 
 .about_us .about_us_conant .about_text a {
@@ -610,7 +626,7 @@ header {
 
 .about_us .about_us_img {
     display: inline-block;
-    width: 47%;
+    width: 100%;
     margin-top: 95px;
 }
 
@@ -660,7 +676,7 @@ header {
     background-image: url(../images/ba.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     padding: 35px;
     margin-top: 50px;
 }
@@ -682,12 +698,15 @@ header {
 
 
 
+
 .why_us .prosece2 p {
-    width: 60%;
+    width: 100%;
     display: inline-block;
     font-size: 14px;
     margin: 2px 0px 0px 0px;
+    padding: 0px 21px 0px;
 }
+
 
 .why_us .prosece2 h6 {
     margin: -135px 0px 0px 0px;
@@ -828,7 +847,7 @@ header {
     width: 50%;
     text-align: right;
     color: #fff;
-    z-index: 1;
+    z-index: 99;
 }
 
 .our_services ul li .contact a {
@@ -857,14 +876,35 @@ header {
     padding: 10px;
 }
 
-.our_services ul li::before {
+
+
+
+
+
+
+.our_services ul li::after {
     content: "";
     opacity: 0.729;
-    width: 382px;
-    height: 299px;
+    width: 95%;
+    height: 91%;
+    border-radius: 5px;
+    background-color: #92959a;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    top: 0;
+    display: inline-block;
+}
+
+
+.our_services ul li:hover::after {
+    content: "";
+    opacity: 0.729;
+    width: 95%;
+    height: 91%;
     border-radius: 5px;
     background-color: #20145f;
-    z-index: 1;
+    z-index: 9;
     display: inline-block;
     position: absolute;
     margin-top: 10px;
@@ -1149,7 +1189,7 @@ header {
     display: inline-block;
     width: 20px;
     height: 20px;
-    margin: 0px 9px;
+    margin: 0px 14px;
     padding: 0;
     cursor: pointer;
     /* padding: 0; */
@@ -1237,11 +1277,20 @@ header {
 
 }
 
-.footer .footer12 .logo_and_into {
-    width: 30%;
+.footer .footer12 .logo_and_intro {
+
+    width: 25%;
 }
 
-.footer .footer12 .logo_and_into .into {
+.footer .footer12 .logo_and_into {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.footer .footer12 .logo_and_into .into p {
     font-size: 13px;
 }
 
@@ -1253,7 +1302,15 @@ header {
 
 .footer .footer12 .logo_and_into .social ul li {
     padding-left: 5px;
+
 }
+
+.footer .footer12 .logo_and_into .social ul li a {
+
+    font-size: 18px;
+
+}
+
 
 
 .main_footer {}
@@ -1278,7 +1335,9 @@ header {
 
 .main_footer ul {}
 
-
+.footer .footer12 .therd_footer .therd_footer101 {
+    width: 56%;
+}
 
 .footer .footer12 .therd_footer ul li:nth-child(3)::after {
     content: "";
@@ -1294,6 +1353,10 @@ header {
     margin-left: -121px;
 }
 
+.footer .footer12 .therd_footer form {
+    position: relative;
+}
+
 .footer .footer12 .therd_footer input#email {
     width: 300px;
     height: 51px;
@@ -1301,7 +1364,7 @@ header {
     border: none;
     text-align: right;
     padding: 10px;
-    position: relative;
+
 }
 
 .footer .footer12 .therd_footer input#submit {
@@ -1313,7 +1376,7 @@ header {
     background: url(../images/mess.png)no-repeat;
     font-size: 0;
     width: 50px;
-    left: 14px;
+    left: 1rem;
     padding: 22px;
     margin-top: 5px;
 }
@@ -1321,6 +1384,7 @@ header {
 .footer .footer12 ul span {
     padding-left: 8px;
 }
+
 
 
 

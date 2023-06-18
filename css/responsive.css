@@ -3,11 +3,27 @@
  @media only screen and (max-width: 1200px) {
 
      /**************header**********/
-     header {
+     header .menu {
          display: none !important;
      }
 
+     .down_header .logo img {
+        width: 60%;
+        margin-right: 8px;
+    }
 
+    
+    .down_header .logo {
+        text-align: right;
+    }
+
+    .introduction {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16/9;
+        top: -65px;
+    }
 
      /**************header**********/
 
@@ -62,7 +78,7 @@
 
      /**************about_us**********/
 
-     .about_us .about_us_conant .about_text h1 {
+     /* .about_us .about_us_conant .about_text h1 {
 
          font-size: 111px;
 
@@ -100,7 +116,7 @@
      .about_us .about_us_conant .about_us_img {
 
          margin-right: 16px;
-     }
+     } */
 
 
      /**************about_us**********/
@@ -136,7 +152,7 @@
          position: absolute;
          top: 101px;
          right: 2rem;
-         width: 44%;
+         width: 50%;
          text-align: right;
          color: #fff;
          z-index: 1;
@@ -187,6 +203,15 @@
 
      /**************News**********/
 
+     .footer .footer12 {}
+
+     .footer .footer12 .logo_and_intro {
+
+         width: 40%;
+     }
+
+
+
  }
 
 
@@ -194,50 +219,38 @@
 
 
  @media only screen and (max-width: 992px) {
+    .top_header .left_header ul li {
+        padding: 8px;
+    }
+
+    .right_header.contact ul li {
+        padding: 12px;
+        font-size: 10.5px;
+    }
      /**************about_us**********/
+     .about_us .about_us_conant {
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
 
-     .about_us .about_us_conant .about_text h1 {
-
-         font-size: 80px;
-         position: relative;
      }
 
-     .about_us .about_us_conant .about_text h5 {
-         font-size: 19px;
-         position: absolute;
-         top: 0px;
-         left: 327px;
+     .about_us .text {
+         width: 100%;
+     }
 
+     .about_us .about_us_conant .about_text {
+         margin: 0px;
          text-align: right;
+         width: 90%;
+         padding-left: 50px;
+     }
+
+     .about_us .img101 {
+         width: 90%;
+         margin: 0px 42px 0px;
      }
 
 
-
-     .about_us .about_us_conant .about_text h3 {
-         font-size: 20px;
-         position: absolute;
-         width: 38%;
-         top: 71px;
-         left: 81px;
-     }
-
-     .about_us .about_us_conant .about_text p {
-         font-size: 15px;
-         width: 98%;
-         text-align: right;
-         margin: 0;
-         padding-left: 45px;
-         margin-bottom: 18px
-     }
-
-     .about_us .about_us_conant .about_text a {
-         margin-right: 6px;
-     }
-
-     .about_us .about_us_conant .about_us_img {
-
-         margin-right: 16px;
-     }
 
 
      /**************about_us**********/
@@ -257,10 +270,10 @@
      }
 
      .news .news1 .slick-prev {
-        left: 16rem;
-        /* color: #fff; */
-        top: -35px;
-    
+         left: 16rem;
+         /* color: #fff; */
+         top: -35px;
+
          /* color: #fff; */
          top: -35px;
      }
@@ -288,7 +301,7 @@
          background: url(../images/mess.png)no-repeat;
          font-size: 0;
          width: 50px;
-         left: 33rem;
+         left: 1rem;
          padding: 22px;
          margin-top: 5px;
 
@@ -312,6 +325,37 @@
 
  @media only screen and (max-width: 768px) {
 
+    .top_header .left_header ul li {
+        padding: 3px;
+    }
+
+    .right_header.contact ul li {
+        padding: 4px;
+        font-size: 9.5px;
+    }
+
+    .top_header .left_header a.Price {
+        border-radius: 11px;
+        padding: 3px;
+        color: var(--main-color);
+        border: 1px solid;
+        font-family: ciro;
+        font-weight: bold;
+        background: #fff;
+    }
+
+    .top_header a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    .top_header .container_1200 {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
      .news .news1 {
          margin-top: 116px;
      }
@@ -334,7 +378,7 @@
          right: 258px;
      }
 
-     
+
 
      .news .titel h6 {
 
@@ -345,36 +389,40 @@
          top: -40px;
      }
 
-    
+
      .footer .footer12 .therd_footer input#submit {
-      
-      
-         left: 24rem;
-         
+
+
+         left: 1rem;
+
      }
 
 
      .why_us .res_for_why .prosece2 {
-        width: 48%;
-        text-align: center;
-    }
+         width: 48%;
+         text-align: center;
+     }
 
 
-    .why_us .res_for_why {
-        display: grid;
-        /* flex-direction: row-reverse; */
-        /* flex-wrap: wrap; */
-        grid-template-columns: repeat(2,1fr);
-        justify-content: space-between;
-        justify-items: center;
-    }
+     .why_us .res_for_why {
+         display: grid;
+         /* flex-direction: row-reverse; */
+         /* flex-wrap: wrap; */
+         grid-template-columns: repeat(2, 1fr);
+         justify-content: space-between;
+         justify-items: center;
+     }
 
      .why_us .prosece2 p {
-        width: 100%;
-        display: inline-block;
-        font-size: 14px;
-        margin: 25px 0px 175px;
-    }
+         width: 100%;
+         display: inline-block;
+         font-size: 14px;
+         margin: 25px 0px 175px;
+     }
+
+     .footer .footer12 .logo_and_intro {
+         width: 100%;
+     }
 
 
  }
@@ -384,7 +432,27 @@
 
 
  @media only screen and (max-width: 576px) {
-     .news .news1 {
+    .top_header .container_1200 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    
+    .right_header.contact ul {
+        display: flex;
+        
+        justify-content: space-between;
+        list-style: none;
+        margin: 15px 0px 0px 0px;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    
+    .news .news1 {
          margin-top: 116px;
      }
 
@@ -402,26 +470,26 @@
 
 
      .why_us .res_for_why .prosece2 {
-        width: 48%;
-        text-align: center;
-    }
+         width: 48%;
+         text-align: center;
+     }
 
 
-    .why_us .res_for_why {
-        display: grid;
-        /* flex-direction: row-reverse; */
-        /* flex-wrap: wrap; */
-        grid-template-columns: repeat(2,1fr);
-        justify-content: space-between;
-        justify-items: center;
-    }
+     .why_us .res_for_why {
+         display: grid;
+         /* flex-direction: row-reverse; */
+         /* flex-wrap: wrap; */
+         grid-template-columns: repeat(2, 1fr);
+         justify-content: space-between;
+         justify-items: center;
+     }
 
      .why_us .prosece2 p {
-        width: 100%;
-        display: inline-block;
-        font-size: 14px;
-        margin: 25px 0px 175px;
-    }
+         width: 100%;
+         display: inline-block;
+         font-size: 14px;
+         margin: 25px 0px 175px;
+     }
  }
 
 
@@ -432,7 +500,7 @@
 
  @media only screen and (max-width: 567px) {
      .news .news1 {
-         margin-top: 116px;
+         margin-top: 46px;
      }
 
      .news .news1 .slick-prev {
@@ -449,57 +517,59 @@
 
 
      .why_us .res_for_why .prosece2 {
-        width: 48%;
-        text-align: center;
-    }
+         width: 75%;
+         text-align: center;
+     }
 
 
-    .why_us .res_for_why {
-        display: grid;
-        /* flex-direction: row-reverse; */
-        /* flex-wrap: wrap; */
-        grid-template-columns: repeat(2,1fr);
-        justify-content: space-between;
-        justify-items: center;
-    }
+     .why_us .res_for_why {
+         display: grid;
+         /* flex-direction: row-reverse; */
+         /* flex-wrap: wrap; */
+         grid-template-columns: repeat(1, 1fr);
+         justify-content: space-between;
+         justify-items: center;
+     }
 
      .why_us .prosece2 p {
-        width: 100%;
-        display: inline-block;
-        font-size: 14px;
-        margin: 25px 0px 175px;
-    }
+         width: 100%;
+         display: inline-block;
+         font-size: 14px;
+         margin: 25px 0px 175px;
+     }
 
-    .footer .footer12 .therd_footer input#submit {
-        left: 5rem;
-    }
+     .footer .footer12 .therd_footer input#submit {
 
-    .our_process .taitel h1 {
-        top: 3px;
-        font-size: 81px;
-    }
+         left: 13rem;
 
-    .our_process .process ul {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding: 0;
-        margin: 0;
-    }
+     }
 
+     .our_process .taitel h1 {
+         top: 3px;
+         font-size: 71px;
+     }
 
-    .our_process .process li {
-        position: relative;
-        width: 70%;
-        /* margin: 14px; */
-        margin-left: 64px;
-        /* margin-top: -87px; */
-        top: -79px;
-    }
+     .our_process .process ul {
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         padding: 0;
+         margin: 0;
+     }
 
 
+     .our_process .process li {
+         position: relative;
+         width: 70%;
+         /* margin: 14px; */
+         /* margin-left: 64px; */
+         /* margin-top: -87px; */
+         top: 70px;
+     }
 
-    .about_us .about_us_conant .about_text {
-        /* margin-right: 44px; */
+
+
+     /* .about_us .about_us_conant .about_text {
+        
         text-align: right;
         width: 100%;
     }
@@ -536,23 +606,23 @@
     .about_us .about_us_conant .about_us_img {
         margin: 29px 17px 0px;
         width: 100%;
-    }
+    } */
 
-    .main_services .titel h2 {
-        font-size: 27px;
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        margin: 0;
-        /* top: 84px; */
-    }
+     .main_services .titel h2 {
+         font-size: 27px;
+         position: relative;
+         display: inline-block;
+         width: 100%;
+         margin: 0;
+         /* top: 84px; */
+     }
 
-    .main_services .our_services .pic img {
-        width: 100%;
+     .main_services .our_services .pic img {
+         width: 100%;
 
-    }
+     }
 
-    .our_services ul li::before {
+     /* .our_services ul li::before {
         content: "";
         opacity: 0.729;
         width: 325px;
@@ -564,73 +634,220 @@
         position: absolute;
         margin-top: 10px;
         margin-left: 10px;
+    } */
+
+     .main_services .our_services ul li .contact {
+         position: absolute;
+         top: 39px;
+         right: 2rem;
+         width: 50%;
+         text-align: right;
+         color: #fff;
+         z-index: 1;
+     }
+
+     .footer .footer12 {
+         display: grid;
+         align-content: space-between;
+         grid-template-columns: repeat(1, 1fr);
+         justify-items: end;
+     }
+
+     .footer .footer12 .logo_and_into {
+         width: 100%;
+         text-align: right;
+     }
+
+     .footer h1 {
+         font-size: 19px;
+         position: relative;
+     }
+
+     .footer h1::after {
+         content: "";
+         opacity: 0.729;
+         width: 60px;
+         height: 2px;
+         /* border-radius: 5px; */
+         background-color: #fff;
+         z-index: 1;
+         display: inline-block;
+         position: absolute;
+         /* margin-top: 10px; */
+         margin-left: -61px;
+         top: 38px;
+     }
+
+
+     .footer.main_footer {
+         text-align: right;
+         margin-right: -41px;
+     }
+
+
+     .footer .second_footer {
+         text-align: right;
+         /* margin-right: -1px; */
+     }
+
+     .footer.therd_footer {
+         text-align: right;
+     }
+
+     .footer .footer12 .therd_footer input#submit {
+         left: 1rem;
+     }
+
+     .about_us .img101 {
+         width: 92%;
+         margin: 0px 13px 0px;
+     }
+
+     .about_us .about_us_conant .about_text {
+         margin: 0px;
+         text-align: right;
+         width: 90%;
+         padding-left: 0px;
+     }
+
+
+     .why_us {
+         margin-top: 0px;
+     }
+
+
+ }
+
+
+ @media only screen and (max-width: 426px) {
+     
+    .introduction {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16/9;
+        top: 0px;
+    
     }
 
-    .main_services .our_services ul li .contact {
-        position: absolute;
-        top: 39px;
-        right: 2rem;
-        width: 47%;
-        text-align: right;
-        color: #fff;
-        z-index: 1;
+    section#out {
+        margin-top: 60px;
     }
 
-    .footer .footer12 {
-        display: grid;
-        /* flex-direction: row-reverse; */
-        /* justify-content: space-between; */
-        /* flex-wrap: wrap; */
-        /* text-align: right; */
-        align-content: space-between;
-        grid-template-columns: repeat(1,1fr);
-        justify-items: center;
+ }
+
+ 
+
+
+ @media only screen and (max-width: 399px) {
+     
+    .introduction {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16/9;
+        top: 0px;
+    
     }
 
-    .footer .footer12 .logo_and_into {
-        width: 60%;
-        text-align: right;
+    section#out {
+        margin-top: 60px;
     }
+    .our_process .process {
 
-    .footer h1 {
-        font-size: 19px;
+         margin-top: 0px !important;
+
+     }
+
+     .our_process .process li {
+         position: relative;
+         width: 70%;
+         /* margin: 14px; */
+         margin-left: 64px !important;
+         margin-top: 0px !important;
+         top: -16px;
+     }
+
+     .footer .footer12 .logo_and_into {
+         width: 93%;
+         text-align: right;
+     }
+
+
+
+ }
+
+
+
+ @media only screen and (max-width: 320px) {
+     .footer .footer12 .logo_and_into {
+         width: 100%;
+         text-align: right;
+     }
+
+     .footer .footer12 .logo_and_into .logo img {
+         width: 60%;
+     }
+
+     .footer .footer12 .main_footer {
+         width: 100%;
+         /* text-align: center; */
+     }
+
+     .footer .footer12 .second_footer101{
+        width: 87%;
+     }
+
+     .footer .footer12 .therd_footer101{
+        width: 87%;
+     }
+
+
+     .footer h1 {
+        font-size: 16px;
         position: relative;
     }
 
-    .footer h1::after {
-        content: "";
-        opacity: 0.729;
-        width: 60px;
-        height: 2px;
-        /* border-radius: 5px; */
-        background-color: #fff;
-        z-index: 1;
-        display: inline-block;
-        position: absolute;
-        /* margin-top: 10px; */
-        margin-left: -61px;
-        top: 38px;
+    .footer .footer12 .therd_footer form {
+        position: relative;
+        top: 13px;
     }
 
-    
-    .footer.main_footer {
+    .footer .footer12 .therd_footer input#email {
+        width: 100%;
+        height: 51px;
+        border-radius: 8px;
+        border: none;
         text-align: right;
-        margin-right: -41px;
+        padding: 9px;
     }
 
 
-    .footer .second_footer {
-        text-align: right;
-        /* margin-right: -1px; */
-    }
 
-    .footer.therd_footer {
-        text-align: right;
-    }
-
-    .footer .footer12 .therd_footer input#submit {
-        left: 1rem;
-    }
-    
-    
  }
+
+
+
+ @media only screen and (max-width: 320px) {
+    .our_process .process li {
+        position: relative;
+        width: 70%;
+        /* margin: 14px; */
+        margin-left: 64px !important;
+        margin-top: 0px !important;
+        top: -149px;
+    }
+
+    .down_header .container_1200 {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+}
+
+
+
+ 
