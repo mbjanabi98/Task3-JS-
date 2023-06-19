@@ -62,7 +62,7 @@
         align-items: center;
         margin-bottom: 11px;
      }
- }
+ 
 
  .introduction {
    
@@ -255,7 +255,7 @@
  }
 
 
-
+}
 
 
 
@@ -610,6 +610,24 @@
          /* margin-top: -87px; */
          top: 70px;
      }
+
+
+     .our_process .process {
+        margin-top: -6px;
+    }
+
+    .our_process .taitel h3 {
+        top: 150px;
+    }
+
+    .our_process .taitel h4 {
+        top: 117px;
+    }
+
+    .our_process .taitel h1 {
+        top: 104px;
+        font-size: 71px;
+    }
 
 
 
