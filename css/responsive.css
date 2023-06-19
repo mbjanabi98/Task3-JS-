@@ -354,7 +354,15 @@
 
      /**************footer**********/
 
-
+     .our_process .taitel h4 {
+        top: 109px;
+    }
+    .our_process .taitel h3 {
+        top: 149px;
+    }
+    .our_process .process {
+        margin-top: -31px;
+    }
 
  }
 
@@ -824,10 +832,9 @@
      }
 
      .our_process .process {
-
-         margin-top: 0px !important;
-
-     }
+        margin-top: 58px !important;
+    }
+    
 
      .our_process .process li {
          position: relative;
